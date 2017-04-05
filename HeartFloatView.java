@@ -1,5 +1,3 @@
-package com.memebox.cn.android.module.live.ui.view;
-
 import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.TypeEvaluator;
@@ -19,8 +17,6 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
-
-import com.memebox.cn.android.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,12 +63,12 @@ public class HeartFloatView extends View {
     private void init() {
         setWillNotDraw(false);
         Resources resources = getResources();
-        mHeartImgs[0] = BitmapFactory.decodeResource(resources, R.mipmap.live_heart1);
-        mHeartImgs[1] = BitmapFactory.decodeResource(resources, R.mipmap.live_heart2);
-        mHeartImgs[2] = BitmapFactory.decodeResource(resources, R.mipmap.live_heart3);
-        mHeartImgs[3] = BitmapFactory.decodeResource(resources, R.mipmap.live_heart4);
-        mHeartImgs[4] = BitmapFactory.decodeResource(resources, R.mipmap.live_heart5);
-        mHeartImgs[5] = BitmapFactory.decodeResource(resources, R.mipmap.live_heart6);
+        mHeartImgs[0] = BitmapFactory.decodeResource(resources, R.mipmap.heart1);
+        mHeartImgs[1] = BitmapFactory.decodeResource(resources, R.mipmap.heart2);
+        mHeartImgs[2] = BitmapFactory.decodeResource(resources, R.mipmap.heart3);
+        mHeartImgs[3] = BitmapFactory.decodeResource(resources, R.mipmap.heart4);
+        mHeartImgs[4] = BitmapFactory.decodeResource(resources, R.mipmap.heart5);
+        mHeartImgs[5] = BitmapFactory.decodeResource(resources, R.mipmap.heart6);
         mInterpolators[0] = new LinearInterpolator();
         mInterpolators[1] = new AccelerateInterpolator();
         mInterpolators[2] = new DecelerateInterpolator();
