@@ -280,7 +280,7 @@ public class HeartFloatView extends View {
     }
 
     /**
-     * bei曲
+     * 贝塞尔曲线
      */
     private class BezierEvaluator implements TypeEvaluator<PointF> {
 
@@ -297,7 +297,7 @@ public class HeartFloatView extends View {
                                PointF endValue) {
 
             float timeLeft = 1.0f - time;
-            PointF point = new PointF();//结果
+            PointF point = new PointF();
 
             point.x = timeLeft * timeLeft * timeLeft * (startValue.x)
                     + 3 * timeLeft * timeLeft * time * (pointF1.x)
