@@ -5,7 +5,6 @@
 
 HeartFloatView floatview = ....;
 
-//添加漂浮的心
-floatView.addHeartItem();
+floatView.addHeartItem();//添加漂浮的心
 
 ![Image](https://github.com/msilemsile/Heart/blob/master/demo.gif)
